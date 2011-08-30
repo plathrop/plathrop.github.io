@@ -1,8 +1,20 @@
 ---
 layout: master
 ---
-<ul class="posts">
-  {% for post in site.posts %}
-     <li><span>{{ post.date | date_to_long_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
-  {% endfor %}
-</ul>
+<h1>Blog</h1>
+{% assign first_post = site.posts.first %}
+<div id="post">
+  <h2><a href="{{ first_post.url }}">{{ first_post.title }}</a></h2>
+  <div id="post_date"><h3>{{ first_post.date | date_to_long_string }}</h3></div>
+  {{ first_post.content }}
+</div>
+{% if site.posts.length > 1 %}
+<h1>Archive</h1>
+<div id="post_list">
+  <ul class="posts">
+    {% for post in site.posts %}
+    <li><span>{{ post.date | date_to_long_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
+    {% endfor %}
+  </ul>
+</div>
+{% endif %}

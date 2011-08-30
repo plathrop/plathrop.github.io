@@ -42,6 +42,9 @@ H1 {font-size: 1.8em;
 H2 {font-size: 1.2em;
     color:#300;}
 
+H3 {font-size: 1em;
+    color:#300;}
+
 .outside{width:865px;
 	 position:relative;
 	 z-index:1;
