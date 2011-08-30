@@ -66,12 +66,6 @@ H2 {font-size: 1.2em;
 	padding-left:48px;
 	padding-bottom:10px;}
 
-.highlight{z-index:3;
-           background-color:#dcdfdf;}
-
-.lineno{z-index:3;
-        background-color:#cbcece;}
-
 .ur_corner{position:relative;
 	   left:23px;
            top:-20px;
