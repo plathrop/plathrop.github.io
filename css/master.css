@@ -14,7 +14,7 @@ body {margin:0px;
       scrollbar-shadow-color: #400;
       scrollbar-arrow-color: #300;}
 
-#post_list {font-size: 1.2em;}
+#post_list, #link_list {font-size: 1.2em;}
 
 a:link { color: #bd321d; text-decoration: none; }
 a:visited {color:#600; text-decoration: none; }
