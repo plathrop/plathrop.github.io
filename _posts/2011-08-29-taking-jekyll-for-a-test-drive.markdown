@@ -79,8 +79,14 @@ CSS because damn, this be ugly. All in all I'm very happy with the new
 setup, but we'll see how it wears after a week or two. New things
 always have that glitter and shine, right?
 
+**Update:** I took horrific liberties with the amazing design
+[Crystal Odenkirk][6] created for my [resume][7]. I'm pretty happy
+with the results, though there are definitely some details that need work.
+
 [1]: http://tom.preston-werner.com/2008/11/17/blogging-like-a-hacker.html
 [2]: http://github.com
 [3]: http://metajack.im/2009/01/02/manage-jekyll-from-emacs/
 [4]: http://pages.github.com
 [5]: https://github.com/metajack/jekyll/blob/master/emacs/jekyll.el
+[6]: http://crysodenkirk.com
+[7]: /resume.html

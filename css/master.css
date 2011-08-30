@@ -88,6 +88,8 @@ html>body .rt_flourish {margin-right:-39px;
 	   width:12px;
 	   margin-bottom:-13px;}
 
+strong { font-weight:bold; }
+
 #bl_corner, #br_corner{
     display:block;
     position:relative;
