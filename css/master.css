@@ -56,6 +56,16 @@ H3 {font-size: 1em;
 	 text-align:left;
 	 margin-left:10px;}
 
+.rt_flourish{position:absolute;
+	     z-index:4;
+	     align:right;
+	     right:0px;
+	     margin-right:-34px;
+	     margin-top:-195px;}
+
+html>body .rt_flourish {margin-right:-39px;
+                        margin-top:-165px;}
+
 .inside{position:relative;
 	z-index:2;
 	background-color:transparent;
