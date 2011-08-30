@@ -2,13 +2,22 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
   <head>
     <title>Paul Lathrop - {{ page.title }}</title>
+    <link rel="stylesheet" type="text/css" href="css/master.css">
   </head>
   <body>
-    <div id="content">
-      {{ content }}
-    </div>
-    <div id="footer">
-      Copyright 2011 Paul Lathrop. Some rights reserved.
+    <div align="center">
+      <div class="outside">
+        <div class="inside">
+          <img src="images/upper_right_corner.gif" class="ur_corner" align="right" /><h1>Blog Posts</h1>
+          <div id="post_list">
+            {{ content }}
+          </div>
+        </div>
+      </div>
+      <div class="footer">
+        <span id="bl_corner"><span id="br_corner"><!-- --></span></span>
+        <span id="copyright">© 2011 Paul Lathrop. Some rights reserved.</span>
+      </div>
     </div>
   </body>
 </html>

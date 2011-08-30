@@ -1,10 +1,29 @@
----
-layout: master
----
-<div class="post">
-  <div class="title"><h1>{{ page.title }}</h1></div>
-  <div class="date">{{ page.date | date_to_long_string }}</div>
-  <div class="body">
-    {{ content }}
-  </div>
-</div>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
+  <head>
+    <title>Paul Lathrop - {{ page.title }}</title>
+    <link rel="stylesheet" type="text/css" href="/css/master.css">
+    <link rel="stylesheet" type="text/css" href="/css/pygments.css">
+  </head>
+  <body>
+    <div align="center">
+      <div class="outside">
+        <div class="inside">
+          <img src="/images/upper_right_corner.gif" class="ur_corner" align="right" />
+          <h1>{{ page.title }}</h1>
+          <div id="post_date"><h2>{{ page.date | date_to_long_string }}</h2></div>
+          <div class="post">
+            <div class="date"></div>
+            <div class="post_body">
+              {{ content }}
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer">
+        <span id="bl_corner"><span id="br_corner"><!-- --></span></span>
+        <span id="copyright">© 2011 Paul Lathrop. Some rights reserved.</span>
+      </div>
+    </div>
+  </body>
+</html>

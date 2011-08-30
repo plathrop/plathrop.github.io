@@ -1,0 +1,104 @@
+body {margin:0px;
+      background-color: #600;
+      color: #000000;
+      font-weight: 300;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: .8 em;
+      text-align:center;
+      scrollbar-base-color: #500;
+      scrollbar-track-color: #300;
+      scrollbar-face-color: #BD321D;
+      scrollbar-highlight-color: ##EEAD53;
+      scrollbar-3dlight-color: ##EEAD53;
+      scrollbar-darkshadow-color: #600;
+      scrollbar-shadow-color: #400;
+      scrollbar-arrow-color: #300;}
+
+#post_list {font-size: 1.2em;}
+
+a:link { color: #bd321d; text-decoration: none; }
+a:visited {color:#600; text-decoration: none; }
+a:hover { color:#EEAD53; }
+
+H1, H2, H3, H4, H5, H6 {font-weight: heavy;
+                        font-family: Arial, Helvetica, sans-serif;
+                        color: #600;
+                        position:relative;
+	                z-index:5;}
+
+H1 {font-size: 1.8em;
+    width:780px;
+    position:relative;
+    background-color:transparent;
+    background-image:url(../images/head1_bg.gif);
+    background-repeat:no-repeat;
+    background-position:left bottom;
+    left:-87px;
+    padding-left:65px;
+    padding-top:25px;
+    padding-bottom:20px;
+    margin-bottom:-24px;}
+
+H2 {font-size: 1.2em;
+    color:#300;}
+
+.outside{width:865px;
+	 position:relative;
+	 z-index:1;
+	 background-color:#600;
+	 background-image:url(../images/background.gif);
+	 background-repeat:repeat-y;
+	 background-position: top left;
+	 margin-top:10px;
+	 text-align:left;
+	 margin-left:10px;}
+
+.inside{position:relative;
+	z-index:2;
+	background-color:transparent;
+	background-image:url(../images/top.gif);
+	background-repeat:repeat-x;
+	background-position:top left;
+	margin:0px;
+	margin-right:6px;
+	text-align:left;
+	padding:20px;
+	padding-left:48px;
+	padding-bottom:10px;}
+
+.highlight{z-index:3;
+           background-color:#dcdfdf;}
+
+.lineno{z-index:3;
+        background-color:#cbcece;}
+
+.ur_corner{position:relative;
+	   left:23px;
+           top:-20px;
+	   z-index:3;
+	   display:block;
+	   height:13px;
+	   width:12px;
+	   margin-bottom:-13px;}
+
+#bl_corner, #br_corner{
+    display:block;
+    position:relative;
+    height:10px;
+    margin:0;
+    padding:0;
+    z-index:9;}
+
+#bl_corner{
+    text-align:left;
+    background:url(../images/bottom_left_corner.gif) bottom left no-repeat transparent;
+    top:-13px;left:-5px;width:862px;}
+
+#br_corner{
+    text-align:right;
+    background:url(../images/bottom_right_corner.gif) bottom right no-repeat transparent;}
+
+.footer{font-size: .8em;
+        width:855px;
+	padding:10px 0 10px 0;
+	margin-left:4px;position:relative;display:block;}
