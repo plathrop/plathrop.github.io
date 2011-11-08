@@ -374,6 +374,11 @@ Restart dnsmasq (`/etc/init.d/dnsmasq restart`) and it will pick up
 the new configuration. You may want to tail `/var/log/daemon.log` to
 watch for any error messages from dnsmasq.
 
+At this point we should have a working FAI server ready to PXE boot
+our first client. In [Part II][10] of this series we'll make sure PXE
+booting is working, and set up FAI to bootstrap and configure Ubuntu
+Server.
+
 [1]: http://fai-project.org/
 [2]: https://www.virtualbox.org/
 [3]: http://mirror.liberty.edu/pub/ubuntu-releases/10.10/
@@ -383,4 +388,4 @@ watch for any error messages from dnsmasq.
 [7]: https://www.virtualbox.org/manual/ch06.html#natforward
 [8]: http://fai-project.org/fai-guide/
 [9]: http://thekelleys.org.uk/dnsmasq/doc.htm
-[10]: http://plathrop.tertiusfamily.net/2011/11/08/fai-lab-with-virtualbox-part-ii.html
+[10]: /2011/11/08/fai-lab-with-virtualbox-part-ii.html
