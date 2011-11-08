@@ -11,10 +11,11 @@
         <div class="inside">
           <img src="/images/upper_right_corner.gif" class="ur_corner" align="right" />
           <h1>{{ page.title }}</h1>
-          <div id="post_date"><h2>{{ page.date | date_to_long_string }}</h2></div>
+          <span class="right_align"><h2>{{ page.date | date_to_long_string }}</h2></span>
           <div class="post">
             <div class="date"></div>
             <div class="post_body">
+              <br />
               {{ content }}
             </div>
             <div id="disqus_thread"></div>

@@ -16,6 +16,15 @@ body {margin:0px;
 
 #post_list, #link_list {font-size: 1.2em;}
 
+.left_align {width: 50%;
+             float: left;}
+
+.right_align {width: 50%;
+              text-align: right;
+              float: right;}
+
+.highlight {overflow: scroll;}
+
 a:link { color: #bd321d; text-decoration: none; }
 a:visited {color:#600; text-decoration: none; }
 a:hover { color:#EEAD53; }

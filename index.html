@@ -1,11 +1,11 @@
 ---
 layout: master
 ---
-<h1>Blog</h1>
+<h1>Recent Rambling</h1>
 {% assign first_post = site.posts.first %}
 <div id="post">
-  <h2><a href="{{ first_post.url }}">{{ first_post.title }}</a></h2>
-  <div id="post_date"><h3>{{ first_post.date | date_to_long_string }}</h3></div>
+  <span class="left_align"><h2><a href="{{ first_post.url }}">{{ first_post.title }}</a></h2></span>
+  <span class="right_align"><h2>{{ first_post.date | date_to_long_string }}</h2></span>
   {{ first_post.content }}
 </div>
 <div id="disqus_thread"></div>
