@@ -21,13 +21,3 @@ layout: master
 <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
 <a href="http://disqus.com" class="dsq-brlink">blog comments powered by <span class="logo-disqus">Disqus</span></a>
 </div>
-{% if site.posts.length > 1 %}
-<h1>Archive</h1>
-<div id="post_list">
-  <ul class="posts">
-    {% for post in site.posts %}
-    <li><span>{{ post.date | date_to_long_string }}</span> &raquo; <a href="{{ post.url }}#disqus_thread">{{ post.title }}</a></li>
-    {% endfor %}
-  </ul>
-</div>
-{% endif %}
