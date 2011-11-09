@@ -37,6 +37,9 @@ VBoxManage hostonlyif create
 # Using 'N' from the previous command, run: `VBoxManage hostonlyif
 # ipconfig vboxnetN --ip 192.168.N.1` for example, if N = 0
 VBoxManage hostonlyif ipconfig vboxnet0 --ip 192.168.0.1
+# Finally, disable DHCP on this network, we'll be handling that
+# ourselves.
+VBoxManage dhcpserver remove --ifname vboxnet0
 {% endhighlight %}
 
 Line 3 creates a new host-only network interface in the VirtualBox
@@ -44,7 +47,9 @@ subsystem, while line 6 sets the IP for the host-only network
 interface just created. It's important to remember that this IP
 address is the IP of the *host*, not the virtual machine. The host
 machine is connected to the "host-only network" as well as the other
-virtual machines which are configured to be part of that network.
+virtual machines which are configured to be part of that network. Line
+9 turns off the VirtualBox DHCP server for this network. This is
+important because we'll need to run our own DHCP server for FAI.
 
 The next step is configuring our FAI server. We'll assume that the
 host-only network you created in the previous step is `vboxnet0`.
