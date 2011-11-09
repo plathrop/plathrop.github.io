@@ -72,7 +72,6 @@ Let me break this down line-by-line:
       `VBoxManage list ostypes`
    1. Relatively self-explanatory; we give the VM 512M of RAM, set the
       boot order, and tell it to use UTC for the hardware clock.
-   1. Continuation of the previous line.
    1. Here we create virtual network interfaces for our VM. The first
       NIC will use VirtualBox [NAT][6] networking, allowing it to
       communicate with the outside world via the host. The second
@@ -89,7 +88,7 @@ base installation:
 
 {% highlight bash linenos %}
 # Attach the ISO image as a virtual DVD drive.
-VBoxManage storageattach faiserver --storagectl ide0 --device 1 --port 0 --type dvddrive --medium $HOME/Downloads/ubuntu-10.10-server-i386.iso
+VBoxManage storageattach faiserver --storagectl ide0 --device 1 --port 0 --type dvddrive --medium $HOME/Downloads/ubuntu-10.10-server-amd64.iso
 # Before proceeding, boot the VM and install the OS. Then shut down the VM.
 # Replace the ISO with a virtual empty DVD drive.
 VBoxManage storageattach faiserver --storagectl ide0 --device 1 --port 0 --type dvddrive --medium emptydrive`
