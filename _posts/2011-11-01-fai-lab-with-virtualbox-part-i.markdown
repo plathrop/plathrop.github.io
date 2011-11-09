@@ -344,7 +344,6 @@ First, let's get rid of those packages that were installed for us:
 the following contents.
 
 {% highlight text linenos %}
-port=0
 interface=eth1
 dhcp-range=192.168.0.10,static,7d
 read-ethers
@@ -357,8 +356,6 @@ tftp-root=/srv/tftp/fai
 
 Broken down line-by-line:
 
-   1. Disable listening on the DNS port. We're not going to be using
-      dnsmasq for DNS requests.
    1. Only listen on the interface we have connected to the virtual
       network.
    1. Pass out IP addresses from our virtual network. `static` means
