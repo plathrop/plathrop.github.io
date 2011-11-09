@@ -91,7 +91,7 @@ base installation:
 VBoxManage storageattach faiserver --storagectl ide0 --device 1 --port 0 --type dvddrive --medium $HOME/Downloads/ubuntu-10.10-server-amd64.iso
 # Before proceeding, boot the VM and install the OS. Then shut down the VM.
 # Replace the ISO with a virtual empty DVD drive.
-VBoxManage storageattach faiserver --storagectl ide0 --device 1 --port 0 --type dvddrive --medium emptydrive`
+VBoxManage storageattach faiserver --storagectl ide0 --device 1 --port 0 --type dvddrive --medium emptydrive
 {% endhighlight %}
 
 The last command isn't really necessary; if you skip this step
