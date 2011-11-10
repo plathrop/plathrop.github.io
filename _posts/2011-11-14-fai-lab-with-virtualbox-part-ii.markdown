@@ -297,7 +297,7 @@ package. We'll also want to rename
 `/srv/fai/config/package_config/DEBIAN`. The "DEFAULT" class is
 applied to every FAI client, and since we're going to be working with
 multiple distributions, we don't want to use the bundled DEFAULT
-package_config, which assumes a Debian client.
+`package_config` file, which assumes a Debian client.
 
 Finally, we need to create a [hook][8] for the `updatebase` step of
 the installation to copy the apt files into place inside of the target
