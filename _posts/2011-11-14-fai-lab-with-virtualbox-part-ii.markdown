@@ -1,6 +1,6 @@
 ---
 layout: post
-title: FAI Lab with VirtualBox (Part II)
+title: FAI Lab With VirtualBox (Part II)
 ---
 
 <small>*Note: This post is the second in a series of posts about setting up
