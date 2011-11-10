@@ -389,4 +389,4 @@ Server.
 [7]: https://www.virtualbox.org/manual/ch06.html#natforward
 [8]: http://fai-project.org/fai-guide/
 [9]: http://thekelleys.org.uk/dnsmasq/doc.htm
-[10]: /2011/11/08/fai-lab-with-virtualbox-part-ii.html
+[10]: /2011/11/14/fai-lab-with-virtualbox-part-ii.html
