@@ -317,9 +317,13 @@ configuration space to the target OS for us.
 
 At this point, you should be able to create a new VM similar to the
 "pxetest" VM we created earlier, boot it, and watch FAI automagically
-install Ubuntu onto the new VM. From here, you've got the basis of a
-pretty functional lab, and you can start experimenting with your FAI
-configuration.
+install Ubuntu onto the new VM. When the install completes, a message
+is displayed telling you to hit Return to reboot. Before you do so you
+may want to run `fai-chboot -d 192.168.0.10` (substituting the IP you
+used for the new VM) on the "faiserver", and change the boot device
+priority, so that the VM will boot from the disk instead of the
+network. From here, you've got the basis of a pretty functional lab,
+and you can start experimenting with your FAI configuration.
 
 In Part III of this series, I'll show you how to use FAI to bootstrap
 CentOS, Redhat, and a "live" system for debugging. CentOS/Redhat will
