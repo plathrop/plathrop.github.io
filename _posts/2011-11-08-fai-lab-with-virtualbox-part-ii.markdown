@@ -41,15 +41,15 @@ As you can see, the MAC for the "pxetest" VM is
 VM, along with the hostname you want this system to use.
 
 {% highlight text %}
-08:00:27:92:84:09	ubuntu
+08:00:27:92:84:09	pxetest
 {% endhighlight %}
 
 You'll need to add a record to `/etc/hosts` as well, mapping the name
-(ubuntu) to an IP address from the range we configured dnsmasq to
+(pxetest) to an IP address from the range we configured dnsmasq to
 pass out (192.168.0.10 onward):
 
 {% highlight text %}
-192.168.0.10    ubuntu
+192.168.0.10    pxetest
 {% endhighlight %}
 
 Restart dnsmasq on the "faiserver" VM and boot your "pxetest" VM. You
