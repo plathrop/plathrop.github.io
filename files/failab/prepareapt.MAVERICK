@@ -1,0 +1,13 @@
+#! /bin/bash
+
+error=0 ; trap "error=$((error|1))" ERR
+
+if [ -f /var/run/fai/FAI_INSTALLATION_IN_PROGRESS ]; then
+  echo $HOSTNAME >$FAI_ROOT/etc/hostname
+fi
+
+fcopy -ir /etc/apt
+
+skiptask prepareapt
+
+exit $error
