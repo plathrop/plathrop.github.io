@@ -24,8 +24,8 @@ VBoxManage createvm --name pxetest --ostype Ubuntu_64 --register
 VBoxManage modifyvm pxetest --memory 512 --boot1 disk --boot2 dvd --boot3 net --rtcuseutc on
 VBoxManage modifyvm pxetest --nic1 hostonly --hostonlyadapter1 vboxnet0
 VBoxManage createhd --size 10000 --filename $HOME/Library/VirtualBox/HardDisks/pxetest-root
-VBoxManage storagectl pxetest --name ide0 --add ide --controller PIIX4
-VBoxManage storageattach pxetest --storagectl ide0 --device 0 --port 0 --type hdd --medium $HOME/Library/VirtualBox/HardDisks/pxetest-root.vdi
+VBoxManage storagectl pxetest --name sata0 --add sata
+VBoxManage storageattach pxetest --storagectl sata0 --device 0 --port 0 --type hdd --medium $HOME/Library/VirtualBox/HardDisks/pxetest-root.vdi
 {% endhighlight %}
 
 We're going to need to know the MAC address of the host in order to
@@ -326,9 +326,9 @@ network. From here, you've got the basis of a pretty functional lab,
 and you can start experimenting with your FAI configuration.
 
 In Part III of this series, I'll show you how to use FAI to bootstrap
-CentOS, Redhat, and a "live" system for debugging. CentOS/Redhat will
-be more of an adventure for me since I'm pretty unfamiliar with the
-RPM-based distributions.
+Redhat, and also set up our PXE server to allow us to boot a "live"
+system for debugging. Redhat will be more of an adventure for me since
+I'm pretty unfamiliar with the RPM-based distributions.
 
 [1]: /2011/11/01/fai-lab-with-virtualbox-part-i.html
 [2]: https://www.virtualbox.org/

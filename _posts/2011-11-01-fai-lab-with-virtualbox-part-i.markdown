@@ -59,8 +59,8 @@ VBoxManage createvm --name faiserver --ostype Ubuntu_64 --register
 VBoxManage modifyvm faiserver --memory 512 --boot1 disk --boot2 dvd --boot3 net --rtcuseutc on
 VBoxManage modifyvm faiserver --nic1 nat --nic2 hostonly --hostonlyadapter2 vboxnet0
 VBoxManage createhd --size 10000 --filename $HOME/Library/VirtualBox/HardDisks/faiserver-root
-VBoxManage storagectl faiserver --name ide0 --add ide --controller PIIX4
-VBoxManage storageattach faiserver --storagectl ide0 --device 0 --port 0 --type hdd --medium $HOME/Library/VirtualBox/HardDisks/faiserver-root.vdi
+VBoxManage storagectl faiserver --name sata0 --add sata
+VBoxManage storageattach faiserver --storagectl sata0 --device 0 --port 0 --type hdd --medium $HOME/Library/VirtualBox/HardDisks/faiserver-root.vdi
 {% endhighlight %}
 
 Let me break this down line-by-line:
