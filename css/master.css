@@ -1,122 +1,92 @@
-body {margin:0px;
-      background-color: #600;
-      color: #000000;
-      font-weight: 300;
-      font-family: Arial, Helvetica, sans-serif;
-      font-size: .8 em;
-      text-align:center;
-      scrollbar-base-color: #500;
-      scrollbar-track-color: #300;
-      scrollbar-face-color: #BD321D;
-      scrollbar-highlight-color: ##EEAD53;
-      scrollbar-3dlight-color: ##EEAD53;
-      scrollbar-darkshadow-color: #600;
-      scrollbar-shadow-color: #400;
-      scrollbar-arrow-color: #300;}
+body {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Cabin', sans-serif;
+    font-size: 13px;
+    color: #000000;
+}
 
-#post_list, #link_list {font-size: 1.2em;}
+#right-border {
+    border-right: 3px solid rgb(204,204,204);
+    width: 850px;
+    height: 900px;
+}
 
-.left_align {width: 50%;
-             float: left;}
+#content-container {
+    position: absolute;
+    float: left;
+    top: 100px;
+    left: 50px;
+    width: 850px;
+}
 
-.right_align {width: 50%;
-              text-align: right;
-              float: right;}
+#column-1 {
+    margin-left: 50px;
+    width: 100px;
+    height: 128px;
+}
 
-.highlight {overflow: scroll;}
+#robot { 
+    position: relative;
+    top: 14px;
+    text-align: right; 
+}
 
-a:link { color: #bd321d; text-decoration: none; }
-a:visited {color:#600; text-decoration: none; }
-a:hover { color:#EEAD53; }
+#red-long {
+    position: absolute;
+    top: 144px;
+    left: 100px;
+}
 
-H1, H2, H3, H4, H5, H6 {font-weight: heavy;
-                        font-family: Arial, Helvetica, sans-serif;
-                        color: #600;
-                        position:relative;
-	                z-index:5;}
+#column-2 {
+    position: absolute;
+    top: 0px;
+    left: 150px;
+    margin-left: 25px;
+    width: 350px;
+    height: 112px;
+    border-bottom: 16px solid rgb(130,130,130);
+}
 
-H1 {font-size: 1.8em;
-    width:780px;
-    position:relative;
-    background-color:transparent;
-    background-image:url(../images/head1_bg.gif);
-    background-repeat:no-repeat;
-    background-position:left bottom;
-    left:-87px;
-    padding-left:65px;
-    padding-top:25px;
-    padding-bottom:20px;
-    margin-bottom:-24px;}
+h1, h2 {
+    margin: 0px;
+    font-family: 'Francois One', sans-serif;
+}
 
-H2 {font-size: 1.2em;
-    color:#300;}
+.title-block h1 {
+    font-size: 60px;
+    color: rgb(203,58,39);
+    height: 64px;
+}
 
-H3 {font-size: 1em;
-    color:#300;}
+.title-block h2 {
+    font-size: 30px;
+    color: rgb(130,130,130);
+}
 
-.outside{width:865px;
-	 position:relative;
-	 z-index:1;
-	 background-color:#600;
-	 background-image:url(../images/background.gif);
-	 background-repeat:repeat-y;
-	 background-position: top left;
-	 margin-top:10px;
-	 text-align:left;
-	 margin-left:10px;}
+#column-3 {
+    position: absolute;
+    top: 0px;
+    left: 500px;
+    width: 275px;
+    height: 112px;
+    border-bottom: 16px solid rgb(130,130,130);
+}
 
-.rt_flourish{position:absolute;
-	     z-index:4;
-	     align:right;
-	     right:0px;
-	     margin-right:-34px;
-	     margin-top:-195px;}
+.about-block {
+    text-align: right;
+    font-size: 11px;
+}
 
-html>body .rt_flourish {margin-right:-39px;
-                        margin-top:-165px;}
+.about-block h3 {
+    margin: 16px 0px 0px 0px;
+    font-size: 30px;
+    color: rgb(130,130,130);
+}
 
-.inside{position:relative;
-	z-index:2;
-	background-color:transparent;
-	background-image:url(../images/top.gif);
-	background-repeat:repeat-x;
-	background-position:top left;
-	margin:0px;
-	margin-right:6px;
-	text-align:left;
-	padding:20px;
-	padding-left:48px;
-	padding-bottom:10px;}
-
-.ur_corner{position:relative;
-	   left:23px;
-           top:-20px;
-	   z-index:3;
-	   display:block;
-	   height:13px;
-	   width:12px;
-	   margin-bottom:-13px;}
-
-strong { font-weight:bold; }
-
-#bl_corner, #br_corner{
-    display:block;
-    position:relative;
-    height:10px;
-    margin:0;
-    padding:0;
-    z-index:9;}
-
-#bl_corner{
-    text-align:left;
-    background:url(../images/bottom_left_corner.gif) bottom left no-repeat transparent;
-    top:-13px;left:-5px;width:862px;}
-
-#br_corner{
-    text-align:right;
-    background:url(../images/bottom_right_corner.gif) bottom right no-repeat transparent;}
-
-.footer{font-size: .8em;
-        width:855px;
-	padding:10px 0 10px 0;
-	margin-left:4px;position:relative;display:block;}
+.post-content {
+    position: relative;
+    left: 150px;
+    top: 16px;
+    width: 625px;
+}

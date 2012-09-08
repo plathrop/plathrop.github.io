@@ -2,23 +2,41 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
   <head>
     <title>Paul Lathrop - {{ page.title }}</title>
+    <link rel="stylesheet" type="text/css"
+          href="http://fonts.googleapis.com/css?family=Cabin:500,500italic|Francois+One">
     <link rel="stylesheet" type="text/css" href="/css/master.css">
     <link rel="stylesheet" type="text/css" href="/css/syntax.css">
   </head>
   <body>
-    <div align="center">
-      <div class="outside">
-        <div class="inside">
-          <img src="/images/upper_right_corner.gif" class="ur_corner" align="right" />
+    <div id="right-border">
+      <div id="content-container">
+        <div id="column-1">
+          <img id="robot" src="/images/robot.png" align="right">
+          <img id="red-long" src="/images/red-long.png">
+        </div>
+        <div id="column-2">
+          <div class="title-block">
+            <h1>Ramblings</h1>
+            <h2>Paul Lathrop</h2>
+          </div>
+        </div>
+        <div id="column-3">
+          <div class="about-block">
+            <h3>About Me</h3>
+            <a href="/resume.html">Resume</a><br/>
+            <a href="http://github.com/plathrop">GitHub</a><br/>
+            <a href="http://twitter.com/greytalyn">Twitter</a><br/>
+            <a href="/archive.html">Archive</a><br/>
+          </div>
+        </div>
+        <div class="post-content">
           <h1>{{ page.title }}</h1>
-          <span class="right_align"><h2>{{ page.date | date_to_long_string }}</h2></span>
-          <div class="post">
-            <div class="date"></div>
-            <div class="post_body">
-              <br />
-              {{ content }}
-            </div>
-            <div id="disqus_thread"></div>
+          <span><h2>{{ page.date | date_to_long_string }}</h2></span>
+          {{ content }}
+          <div class="footer">
+            <span id="copyright">© 2011, 2012 Paul Lathrop. Some rights reserved.</span>
+          </div>
+          <div id="disqus_thread">
             <script type="text/javascript">
               var disqus_shortname = 'plathrop';
               var disqus_url = 'http://plathrop.tertiusfamily.net{{ page.url }}';
@@ -33,10 +51,6 @@
           </div>
         </div>
       </div>
-      <div class="footer">
-        <span id="bl_corner"><span id="br_corner"><!-- --></span></span>
-        <span id="copyright">© 2011 Paul Lathrop. Some rights reserved.</span>
-      </div>
     </div>
-  </body>
+</body>
 </html>
