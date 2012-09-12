@@ -4,36 +4,33 @@
     <title>Paul Lathrop</title>
     <link rel="stylesheet" type="text/css"
           href="http://fonts.googleapis.com/css?family=Cabin:500,500italic|Francois+One">
-    <link rel="stylesheet" type="text/css" href="css/master.css">
-    <link rel="stylesheet" type="text/css" href="css/syntax.css">
+    <link rel="stylesheet" type="text/css" href="/css/common.css">
+    <link rel="stylesheet" type="text/css" href="/css/syntax.css">
     <link rel="openid.server" href="http://www.myopenid.com/server">
     <link rel="openid.delegate" href="http://plathrop.myopenid.com/">
   </head>
   <body>
-    <div id="right-border">
-      <div id="content-container">
-        <div id="column-1">
-          <img id="robot" src="images/robot.png" align="right">
-          <img id="red-long" src="images/red-long.png">
+    <div id="content-area">
+      <div id="header">
+        <img id="robot" src="/images/robot.png">
+        <div class="title-block">
+          <h1>CLEVER TITLE</h1>
+          <h2>PAUL LATHROP</h2>
         </div>
-        <div id="column-2">
-          <div class="title-block">
-            <h1>Ramblings</h1>
-            <h2>Paul Lathrop</h2>
-          </div>
-        </div>
-        <div id="column-3">
-          <div class="about-block">
-            <h3>About Me</h3>
-            <a href="/resume.html">Resume</a><br/>
-              <a href="http://github.com/plathrop">GitHub</a><br/>
-              <a href="http://twitter.com/greytalyn">Twitter</a><br/>
-              <a href="/archive.html">Archive</a><br/>
-          </div>
-        </div>
-        <div class="post-content">
-          {{ content }}
+        <div class="about-block">
+          <h3>About Paul</h3>
+          <a href="/resume.html">Resume</a><br/>
+          <a href="http://github.com/plathrop">GitHub</a><br/>
+          <a href="http://twitter.com/greytalyn">Twitter</a><br/>
+          <a href="/archive.html">Archive</a><br/>
         </div>
       </div>
+      <img id="red-long" src="images/red-long.png">
+      <div class="divider-bar">
+      </div>
+      <div class="post-content">
+        {{ content }}
+      </div>
+    </div>
   </body>
 </html>

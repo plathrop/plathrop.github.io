@@ -1,0 +1,120 @@
+body {
+    font-family: 'Cabin', sans-serif;
+    font-size: 13px;
+    color: #000000;
+}
+
+#content-area {
+    width: 850px;
+    height: 1000px;
+    border-right: 3px solid rgb(204,204,204);
+}
+
+#header {
+    position: absolute;
+    top: 100px;
+    left: 50px;
+}
+
+#robot { 
+    position: absolute;
+    top: 28px;
+}
+
+#red-long {
+    position: absolute;
+    top: 244px;
+    left: 100px;
+}
+
+.title-block {
+    position: absolute;
+    left: 125px;
+    width: 350px;
+}
+
+.title-block h1, .title-block h2 {
+    margin: 0px;
+    font-family: 'Francois One', sans-serif;
+}
+
+.title-block h1 {
+    margin: 28px 0px 0px 0px;
+    font-size: 60px;
+    line-height: 62px;
+    color: rgb(203,58,39);
+}
+
+.title-block h2 {
+    font-size: 30px;
+    color: rgb(130,130,130);
+}
+
+.about-block {
+    position: absolute;
+    left: 500px;
+    width: 250px;
+    text-align: right;
+    font-size: 11px;
+}
+
+.about-block h3 {
+    margin: 32px 0px 0px 0px;
+    font-size: 30px;
+    color: rgb(130,130,130);
+}
+
+.post-content {
+    position: absolute;
+    left: 150px;
+    top: 250px;
+    width: 625px;
+}
+
+.info-block {
+    position: absolute;
+    left: 125px;
+    width: 250px;
+    font-family: 'Cabin', sans-serif;
+    font-size: 15px;
+    color: rgb(130,130,130);
+    text-align: right;
+    line-height: 16px;
+}
+
+.name-block {
+    position: absolute;
+    left: 400px;
+    width: 350px;
+    height: 128px;
+    text-align: right;
+}
+
+.name-block h1, .name-block h2 {
+    margin: 0px;
+    font-family: 'Francois One', sans-serif;
+    font-weight: normal;
+}
+
+.name-block h1 {
+    font-size: 60px;
+    line-height: 60px;
+    color: rgb(203,58,39);
+    letter-spacing: -2px;
+    margin-top: 36px;
+}
+
+.name-block h2 {
+    font-size: 30px;
+    line-height: 32px;
+    color: rgb(130,130,130);
+}
+
+.divider-bar {
+    position: absolute;
+    top: 244px;
+    left: 175px;
+    width: 625px;
+    height: 0px;
+    border-top: 16px solid rgb(130,130,130);
+}

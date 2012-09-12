@@ -4,51 +4,47 @@
     <title>Paul Lathrop - {{ page.title }}</title>
     <link rel="stylesheet" type="text/css"
           href="http://fonts.googleapis.com/css?family=Cabin:500,500italic|Francois+One">
-    <link rel="stylesheet" type="text/css" href="/css/master.css">
+    <link rel="stylesheet" type="text/css" href="/css/common.css">
     <link rel="stylesheet" type="text/css" href="/css/syntax.css">
   </head>
   <body>
-    <div id="right-border">
-      <div id="content-container">
-        <div id="column-1">
-          <img id="robot" src="/images/robot.png" align="right">
-          <img id="red-long" src="/images/red-long.png">
+    <div id="content-area">
+      <div id="header">
+        <img id="robot" src="/images/robot.png">
+        <div class="title-block">
+          <h1>CLEVER TITLE</h1>
+          <h2>PAUL LATHROP</h2>
         </div>
-        <div id="column-2">
-          <div class="title-block">
-            <h1>Ramblings</h1>
-            <h2>Paul Lathrop</h2>
-          </div>
+        <div class="about-block">
+          <h3>About Paul</h3>
+          <a href="/resume.html">Resume</a><br/>
+          <a href="http://github.com/plathrop">GitHub</a><br/>
+          <a href="http://twitter.com/greytalyn">Twitter</a><br/>
+          <a href="/archive.html">Archive</a><br/>
         </div>
-        <div id="column-3">
-          <div class="about-block">
-            <h3>About Me</h3>
-            <a href="/resume.html">Resume</a><br/>
-            <a href="http://github.com/plathrop">GitHub</a><br/>
-            <a href="http://twitter.com/greytalyn">Twitter</a><br/>
-            <a href="/archive.html">Archive</a><br/>
-          </div>
+      </div>
+      <img id="red-long" src="/images/red-long.png">
+      <div class="divider-bar">
+      </div>
+      <div class="post-content">
+        <h1>{{ page.title }}</h1>
+        <span><h2>{{ page.date | date_to_long_string }}</h2></span>
+        {{ content }}
+        <div class="footer">
+          <span id="copyright">© 2011, 2012 Paul Lathrop. Some rights reserved.</span>
         </div>
-        <div class="post-content">
-          <h1>{{ page.title }}</h1>
-          <span><h2>{{ page.date | date_to_long_string }}</h2></span>
-          {{ content }}
-          <div class="footer">
-            <span id="copyright">© 2011, 2012 Paul Lathrop. Some rights reserved.</span>
-          </div>
-          <div id="disqus_thread">
-            <script type="text/javascript">
-              var disqus_shortname = 'plathrop';
-              var disqus_url = 'http://plathrop.tertiusfamily.net{{ page.url }}';
-              (function() {
-              var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-              dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
-              (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-              })();
-            </script>
-            <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-            <a href="http://disqus.com" class="dsq-brlink">blog comments powered by <span class="logo-disqus">Disqus</span></a>
-          </div>
+        <div id="disqus_thread">
+          <script type="text/javascript">
+            var disqus_shortname = 'plathrop';
+            var disqus_url = 'http://plathrop.tertiusfamily.net{{ page.url }}';
+            (function() {
+            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+            dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+            })();
+          </script>
+          <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+          <a href="http://disqus.com" class="dsq-brlink">blog comments powered by <span class="logo-disqus">Disqus</span></a>
         </div>
       </div>
     </div>
