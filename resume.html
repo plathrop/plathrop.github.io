@@ -1,185 +1,546 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
-          "http://www.w3.org/TR/html4/loose.dtd">
-<html>
+<!DOCTYPE html>
+<html lang="en">
   <head>
+    <!-- Metadata -->
     <title>Paul Lathrop</title>
     <meta name="description" content="Resume for Paul Lathrop">
-    <meta name="keywords" content="systems administrator operations engineer unix freebsd openbsd linux debian ubuntu ldap openldap apache postfix bind udp icmp dhcp dns http ssl snmp smtp pop imap xen nagios firewall subversion lisp python bash php c git scalability">
-    <link rel="stylesheet" type="text/css" href="css/resume.css">
-    <link rel="openid.server" href="http://www.myopenid.com/server">
-    <link rel="openid.delegate" href="http://plathrop.myopenid.com/">
-  </head>
+    <meta charset="utf-8" />
 
+    <!-- Styles -->
+    <link rel="stylesheet" type="text/css"
+          href="http://fonts.googleapis.com/css?family=Cabin:500,500italic|Francois+One">
+    <link href="css/bootstrap.css" rel="stylesheet" media="screen">
+    <link rel="stylesheet" type="text/css" href="css/resume2.css">
+
+    <!-- JavaScript -->
+    <script src="js/jquery-2.0.3.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+  </head>
   <body>
-    <div align=center>
-      <div class=outside>
-        <div class=inside>
-	  <img src=images/upper_right_corner.gif class=ur_corner align=right><h1 id="nameplate">Paul Lathrop</h1><br/>
-          <h1>You Want...</h1>
-          <hr width=780px size=2 color=#F5DCB4 noshade>
-          <p>An Operations Engineer specializing in designing and deploying stable, fault-tolerant, scalable operations architectures that grow as fast as your company. Take advantage of ten years of professional experience combined with independence, initiative, and creativity to obtain innovative solutions to complex systems problems and infrastructure needs.</p>
-          <img src=images/content_bg.gif class=rt_flourish>
-          <h1>I Have...</h1>
-          <hr width=780px size=2 color=#F5DCB4 noshade>
-          <ul>
-            <!-- Skills -->
-            <li>Expert-level understanding of Linux/Unix administration and internals.</li>
-            <li>Expert-level understanding of scalable infrastructure design principles:
-              automated installation, configuration management, lifecycle management, asynchronous systems, etc.</li>
-            <li>Intermediate to expert-level understanding of source-code management principles and systems, particularly git.</li>
-            <li>Intermediate to expert programming/scripting skills; developed non-trivial applications and utility scripts in Python, Node.js, Clojure, Common Lisp, Ruby, and bash.</li>
-            <li>Intermediate understanding of distributed data storage and processing technologies: Cassandra, Hadoop, ActiveMQ, RabbitMQ, etc.</li>
-            <li>Intermediate understanding of the JVM platform esp. garbage collection and tuning.</li>
-            <li>Intermediate understanding of software development methodologies: test-driven development, behavior-driven design, object-oriented programming, functional programming, etc.</li>
-            <li>Comprehensive high-level understanding of programming concepts and talent for applying those concepts to rapidly develop proficiency in unfamiliar programming languages.</li>
-            <li>Operational, high-level understanding of network protocols.</li>
-            <li>Basic to intermediate network troubleshooting/monitoring skills: traceroute, tcpdump, nmap, wireshark, netcat, netstat, ping, iproute, dig, Nagios, etc.</li>
-            <li>Operational understanding of relational database systems; intermediate understanding of database scaling techniques: replication, optimization, de-normalization, sharding, etc.</li>
-            <!-- Experience -->
-            <li>Built and lead an Operations team from the ground up; ensured Operations stayed highly integrated with Engineering as both teams grew.</li>
-            <li>Built and automated multi-AZ infrastructure on top of Amazon Web Services.</li>
-            <li>Participated in design and implementation of custom cluster management software, used to manage 1000 servers across bi-coastal datacenters.</li>
-            <li>Implemented Puppet modules to automate configuration of a broad range of services including Apache, Cassandra, Hadoop, MySQL, and RabbitMQ clusters.</li>
-            <li>Installed and maintained a broad range of standard high-scale infrastructure software.</li>
-            <li>Authored and implemented policies and procedures that balance security, ease of use, ease of administration, and executive oversight.</li>
-            <li>Procurement experience: selecting & documenting standard hardware configurations, creating & maintaining vendor relationships, managing purchasing budgets, etc.</li>
-            <li>Contributed to the maintenance and improvement of open-source tools.</li>
-          </ul>
-          <img src=images/content_bg.gif class=rt_flourish>
-          <h1>I've Been...</h1>
-          <hr width=780px size=2 color=#F5DCB4 noshade>
-          <h2>Senior Linux Systems Administrator</h2>
-          <h3>Yammer, Inc. (2011-current)</h3>
-          I've just joined the team at Yammer and I'm excited to see what we'll build together!
-          <h2>Evil Puppetmaster / Engineer</h2>
-          <h3>SimpleGeo, Inc. (2010-2011)</h3>
-          <ul>
-            <li>Yes, that's actually my title.</li>
-            <li>Assisted in the design of an "Operations API" which we will use to control our systems programatically for ad-hoc tasks like restarting services, running consumption tests, kicking off Puppet runs, etc.</li>
-            <li>Built and open-sourced <a href="http://plathrop.github.com/piro">piro</a>, a system for remotely controlling services in a plugabble and programmatic fashion.</li>
-            <li>Created a system which fully records incoming requests and spools a rolling window of requests to disk in order to allow us to replay requests in the event of a failure where we would otherwise lose data.</li>
-            <li>Contributed to development of user-facing API services.</li>
-            <li>Responded to a malicious attack on infrastructure by a privileged user; prevented attack from destroying critical systems. Led recovery from attack and implementation of new security measures. Led investigation of attack which ended in prosecution of responsible party.</li>
-            <li>Built Puppet manifests and bootstrap scripts to allow us to bootstrap instances to various roles without having to maintain AMIs.</li>
-            <li>Built Operations team and acted as team lead: represented operational interests to the development team leads, established processes (scrum, kanban), set priorites in response to business needs, delegated tasks to team members.</li>
-            <li>Migrated configuration management from Chef to Puppet.</li>
-          </ul>
-          <h2>Senior Systems Engineer</h2>
-          <h3>Digg, Inc. (2008-2010)</h3>
-          <ul>
-            <li>Actively worked to close gap between engineering and operations, foster transparency, <br>and empower engineering to iterate rapidly while maintaining site stability.</li>
-            <li>Participated in development of internal cluster mangagement software.</li>
-            <li>Wrote command-line application to automatically allocate and provision servers, <br>including options to specify minimum hardware requirements.</li>
-            <li>Redesigned Digg infrastucture to take advantage of heavy automation & configuration management.</li>
-            <li>Developed Puppet modules to automate deployment, configuration, and lifecycle management of key clusters.</li>
-            <li>Developed FAI scripts which bootstrap systems from 'bare metal' to functioning Puppet clients.</li>
-            <li>Assisted in migration from Subversion to Git as primary source code management system.</li>
-            <li>Responsible for ensuring reliable operation of production, staging, and development systems.</li>
-            <li>Perform code pushes and maintain change documentation.</li>
-          </ul>
-          <h2>Contract Infrastructure Architect</h2>
-          <h3>Zicasso, LLC. (2007-2009)</h3>
-          <ul>
-            <li>Built an infrastucture which has run smoothly for over two years with minimal intervention.</li>
-            <li>Automated system configuration using Puppet.</li>
-            <li>Firewall design, implementation, and maintenance.</li>
-            <li>Create, deploy, and manage Xen virtualized servers.</li>
-            <li>Patch managment and server maintenance.</li>
-            <li>Proposed and implemented automated backup system.</li>
-            <li>Deploy & maintain split-horizon DNS services.</li>
-            <li>Replace Zenoss monitoring system with Nagios.</li>
-            <li>Implement SNMP infrastructure.</li>
-            <li>Deploy Zenoss monitoring system, notifications, and escalations.</li>
-            <li>Created extensive documentation, including straightforward how-to procedures for common administrative tasks.</li>
-            <li>Configure & maintain MySQL database systems.</li>
-          </ul>
-          <h2>Senior Systems Administrator</h2>
-          <h3>Kapor Enterprises, Inc. (2007)</h3>
-          <ul>
-            <li>Created Twiki-based project management application.</li>
-            <li>Identified key areas of network and process improvement, proposed solutions.</li>
-            <li>Proposed, planned, and implemented single sign-on solution and corporate directory service.</li>
-            <li>Provided desktop support for a heterogenous network of Mac OS X, Windows, and Linux desktops.</li>
-            <li>Responsible for researching and procurement of best-of-breed equipment to implement the needs of supported organizations.</li>
-          </ul>
-          <h2>Systems Administrator</h2>
-          <h3>SquareTrade, Inc. (2005-2007)</h3>
-          <ul>
-            <li>24x7 pager support for critical production systems.</li>
-            <li>Planned and implemented migration from SiteScope to Nagios network monitoring, implemented custom service plugins, distributed & redundant architecture, performance metrics, and custom reporting interface.</li>
-            <li>Planned and implemented OpenLDAP directory service; researched and proposed site-wide integration of applications with directory service.</li>
-            <li>Administered heterogeneous network of several hundred nodes spread across several sites; maintained WAN links, VPN, remote administration between locations; maintained two data center locations with over 125 servers.</li>
-            <li>Performed audit of poorly maintained RAID systems, implemented automated maintenance and reporting of RAID array performance and issues.</li>
-            <li>Proposed, planned, and test-deployed Linux desktop solution for sales representatives to replace costly Windows desktops.</li>
-            <li>Performed extensive documentation of server and network infrastructure.</li>
-            <li>Researched, planned, and assisted deployment of Novell eDirectory and ZenWorks infrastructure.</li>
-            <li>Assisted in migration from Checkpoint firewalls to OpenBSD firewalls.</li>
-            <li>Assisted in software license compliance audit.</li>
-            <li>Oversaw replacement of aging desktop-class hardware with server-class hardware.</li>
-            <li>Researched and proposed migration plan from NT-style domain to Active Directory infrastructure.</li>
-            <li>Researched and proposed deployment of enterprise XMPP chat service for internal messaging.</li>
-            <li>Researched and proposed replacement of overloaded internal mail architecture with distributed, scalable mailing architecture.</li>
-          </ul>
-          <img src=images/content_bg.gif class=rt_flourish>
-          <h2>Systems Administrator</h2>
-          <h3>OnYourMark, LLC (2004-2005)</h3>
-          <ul>
-            <li>Planned and implemented migration from archaic Sendmail-based email system to a database-backed Postfix mail server, delegating specific tasks to system administration staff. Supervised programming of customized email administration software for new system.</li>
-            <li>Replaced several outdated firewalls with OpenBSD firewalls. Wrote sophisticated firewall rule sets to filter and monitor network traffic. Created automatic log processing scripts to analyze firewall logs and produce daily reports.</li>
-            <li>Created standardized server configuration procedures and documentation. Oversaw redeployment of servers to comply with standardized configuration.</li>
-            <li>Created and administered network access/security policies and procedures.</li>
-            <li>Maintained and administered heterogeneous intra-office network, including Windows 2000/XP and Mac OS X workstations, Unix file and web servers, wireless access points, and network printers.</li>
-            <li>Planned migration of intra-office network to Windows 2003 Active Directory infrastructure.</li>
-            <li>Remotely administered and maintained DNS, web, and database servers in several co-location facilities.</li>
-            <li>Provided Tier II technical support.</li>
-            <li>Oversaw system backup and network maintenance as well as server monitoring (Nagios) and IDS.</li>
-            <li>Performed software license audit and inventory.</li>
-            <li>Maintained relationships with hardware, software, and bandwidth vendors.</li>
-            <li>Installed and administered DHCP server for automatic network configuration.</li>
-            <li>Automated a variety of administrative tasks through shell scripts and custom programming.</li>
-          </ul>
-          <img src=images/content_bg.gif class=rt_flourish>
-          <h2>Systems Consultant</h2>
-          <h3>Independent (2003-2004)</h3>
-          <ul>
-            <li>Molecular Genetics Laboratory, Michigan State University
-              <ul>
-                <li>Updated laboratory website.
-                <li>Trained laboratory staff in HTML and web authoring software for performing site updates.</li>
-              </ul>
-            <li>Nocturnal Theater
-              <ul><li>Administered web, DNS, and email services.</li></ul>
-            <li>The Intangible
-              <ul><li>Administered DNS and web services.</li></ul>
-          </ul>
-          <h2>Senior Systems Administrator</h2>
-          <h3>Web Media Works (2002-2003)</h3>
-          <ul>
-            <li>Administered web, DNS, and database servers running FreeBSD, NT 4, and Windows 2000 Server.</li>
-            <li>Administered MySQL and MS-SQL 2000 databases.</li>
-            <li>Achieved goal of 99% uptime (up from 70% at time of hire).</li>
-            <li>Created, implemented, and enforced security policies on network, server, and individual workstation levels.</li>
-            <li>Managed server migration to the FreeBSD operating system.</li>
-            <li>Planned and installed internal network: CAT5 cabling, network ports, high-bandwidth switches, wireless access points, routers, firewall, and VPN.</li>
-            <li>Secured wireless network segment against unauthorized access and packet monitoring.</li>
-          </ul>
-          <h2>Student Administrator/Programmer</h2>
-          <h3>J. Robert Van Pelt Library (1999-2001)</h3>
-          <ul>
-            <li>Proposed, planned, and implemented conversion of aging collection of 486 PCs into Citrix Metaframe thin-client terminals.</li>
-            <li>Assisted in migration of servers from Windows NT4 to 2000 Server.</li>
-            <li>Supported a variety of Windows PCs ranging from Windows 95 to Windows 2000 Server.</li>
-          </ul>
-          <img src=images/content_bg.gif class=rt_flourish>
-          <div align=center><i>References Available Upon Request</i></div>
-        </div>
+    <!-- Resume Header -->
+    <div class="row">
+      <!-- Robot Icon -->
+      <div class="offset2 span4" id="header-image">
+        <img id="robot" src="/images/robot.png">
       </div>
-      <div class=footer>
-	<span id="bl_corner"><span id="br_corner"><!-- --></span></span>
-        <!-- <img src=images/bottom_left_corner.gif class=bl_corner>
-             <img src=images/bottom_right_corner.gif class=br_corner>-->
-        <div class=white><i>Copyright &copy; 2007-2010 Paul Lathrop. All Rights Reserved. Design by <a href=http://www.crysodenkirk.com/ target=_blank>Crystal Odenkirk</a></i></div>
+      <!-- Address Block -->
+      <div class="offset1 span10">
+        <address class="text-right">
+          1609 62nd St.<br/>
+          Berkeley, CA 94703<br/>
+          415-290-3961<br/>
+        </address>
+        <address class="text-right">
+          <a href="mailto:#">paul@tertiusfamily.net</a><br/>
+          <a href="http://plathrop.tertiusfamily.net">http://plathrop.tertiusfamily.net</a><br/>
+          <a href="https://github.com/plathrop">https://github.com/plathrop</a>
+        </address>
+      </div>
+      <!-- Name and Title -->
+      <div class="offset1 span15" id="name-and-title">
+        <h1 class="text-right" id="name">PAUL LATHROP</h1>
+        <h2 class="text-right" id="subtitle">FULL-STACK ENGINEER</h2>
       </div>
     </div>
+
+    <!-- Grey Divider below header -->
+    <div class="row">
+      <div class="offset7 span26 divider-bar"></div>
+    </div>
+
+    <!-- You Want / I Have section -->
+    <div class="row">
+      <div class="offset7 span10">
+        <h2 class="h2b">You Want</h2>
+        <p>
+          An Operations Engineer specializing in designing and
+          deploying stable, fault-tolerant, scalable operations
+          architectures that grow as fast as your company. Take
+          advantage of ten years of professional experience combined
+          with independence, initiative, and creativity to obtain
+          innovative solutions to complex systems problems and
+          infrastructure needs.
+        </p>
+      </div>
+      <div class="offset1 span15">
+        <h2 class="h2b">I Have</h2>
+        <ul>
+          <!-- Skills -->
+          <li>Expert-level understanding of Linux/Unix administration
+            and internals.</li>
+          <li>Expert-level understanding of scalable infrastructure
+            design principles: automated installation, configuration
+            management, lifecycle management, asynchronous systems,
+            etc.</li>
+          <li>Intermediate to expert-level understanding of
+            source-code management principles and systems,
+            particularly git.</li>
+          <li>Intermediate to expert programming/scripting skills;
+            developed non-trivial applications and utility scripts in
+            Python, Node.js, Clojure, Common Lisp, Ruby, and
+            bash.</li>
+          <li>Intermediate understanding of distributed data storage
+            and processing technologies: Cassandra, Hadoop, ActiveMQ,
+            RabbitMQ, etc.</li>
+          <li>Intermediate understanding of the JVM platform
+            esp. garbage collection and tuning.</li>
+          <li>Intermediate understanding of software development
+            methodologies: test-driven development, behavior-driven
+            design, object-oriented programming, functional
+            programming, etc.</li>
+          <li>Comprehensive high-level understanding of programming
+            concepts and talent for applying those concepts to rapidly
+            develop proficiency in unfamiliar programming
+            languages.</li>
+          <li>Operational, high-level understanding of network protocols.</li>
+          <li>Basic to intermediate network troubleshooting/monitoring
+            skills: traceroute, tcpdump, nmap, wireshark, netcat,
+            netstat, ping, iproute, dig, Nagios, etc.</li>
+          <li>Operational understanding of relational database
+            systems; intermediate understanding of database scaling
+            techniques: replication, optimization, de-normalization,
+            sharding, etc.</li>
+          <!-- Experience -->
+          <li>Built and lead an Operations team from the ground up;
+            ensured Operations stayed highly integrated with
+            Engineering as both teams grew.</li>
+          <li>Built and automated multi-AZ infrastructure on top of
+            Amazon Web Services.</li>
+          <li>Participated in design and implementation of custom
+            cluster management software, used to manage 1000 servers
+            across bi-coastal datacenters.</li>
+          <li>Implemented Puppet modules to automate configuration of
+            a broad range of services including Apache, Cassandra,
+            Hadoop, MySQL, and RabbitMQ clusters.</li>
+          <li>Installed and maintained a broad range of standard
+            high-scale infrastructure software.</li>
+          <li>Authored and implemented policies and procedures that
+            balance security, ease of use, ease of administration, and
+            executive oversight.</li>
+          <li>Procurement experience: selecting & documenting standard
+            hardware configurations, creating & maintaining vendor
+            relationships, managing purchasing budgets, etc.</li>
+          <li>Contributed to the maintenance and improvement of
+            open-source tools.</li>
+          </ul>
+      </div>
+    </div>
+
+    <!-- Grey Divider -->
+    <div class="row">
+      <div class="offset7 span26 divider-bar"></div>
+    </div>
+
+    <!-- I've Been Section -->
+    <div class="row">
+      <div class="offset18 span15">
+        <h2 class="h2b">I've Been</h2>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="offset7 span10 text-right">
+        <div class="job-border"></div>
+        <span class="job-title">Sr. Engineer</span><br/>
+        <span class="job-company">Krux Digital, Inc.</span><br/>
+        <span class="job-period">2013/03 ongoing</span>
+      </div>
+      <div class="offset1 span15">
+        <ul>
+          <li>Re-designed and re-wrote a core service that is central
+            to the functioning of most other Krux services. Improved
+            performance by at least 40% and as much as 60% for some
+            cases. Improved stability, reliability, and
+            maintainability.</li>
+          <li>Built a standard library for python applications at Krux
+            to enable developers to build applications the "Krux Way"
+            without re-implementing standard components.</li>
+          <li>Architected and lead the implementation of a real-time
+            data processing system scalable to thousands of requests
+            per second.</li>
+          <li>Built a data collection service capable of ingesting
+            2000 data points per second per process using the Tornado
+            framework and python.</li>
+          <li>Built a websockets service for delivering real-time data
+            to a thick web client application.</li>
+          <li>Contributed bug-fixes to front-end angular.js code for
+            Krux' primary web application.</li>
+          <li>Developed internal administration tools for Krux'
+            primary web application using the Django framework.</li>
+        </ul>
+      </div>
+    </div>
+    <br/>
+
+    <div class="row">
+      <div class="offset7 span10 text-right">
+        <div class="job-border"></div>
+        <span class="job-title">Contract DevOps Engineer</span><br/>
+        <span class="job-company">Lyft, Inc.</span><br/>
+        <span class="job-period">8/2013 ongoing</span>
+      </div>
+      <div class="offset1 span15">
+        <ul>
+          <li>Wrote puppet manifests for deploying, configuring, and
+            managing collectd for metric collection and monitoring.</li>
+          <li>Wrote a python plugin for collectd to write metrics to
+            statsd (due to native statsd plugin being unavailable for
+            the version of collectd used at Lyft).</li>
+        </ul>
+      </div>
+    </div>
+    <br/>
+
+    <div class="row">
+      <div class="offset7 span10 text-right">
+        <div class="job-border"></div>
+        <span class="job-title">Contract Operations Engineer</span><br/>
+        <span class="job-company">Zicasso, LLC.</span><br/>
+        <span class="job-period">2011/05 to 2013/09</span>
+      </div>
+      <div class="offset1 span15">
+        <ul>
+          <li>Led a zero-downtime migration between server
+            co-locations facilities.</li>
+          <li>Managed infrastructure for production website, including
+            MySQL master/slave replication.</li>
+          <li>Researched and resolved several performance problems
+            caused by poor query optimization.</li>
+          <li>Advised developers on technology choices for full
+            rewrite of site.</li>
+          <li>Advised founders on recruitment of new developers.</li>
+          <li>Researched hosted Drupal platform, assist in migration
+            to hosted Drupal platform and hand-off to hosted solutions
+            team.</li>
+        </ul>
+      </div>
+    </div>
+    <br/>
+
+    <div class="row">
+      <div class="offset7 span10 text-right">
+        <div class="job-border"></div>
+        <span class="job-title">Sr. DevOps Engineer</span><br/>
+        <span class="job-company">Krux Digital, Inc.</span><br/>
+        <span class="job-period">2012/03 to 2013/03</span>
+      </div>
+      <div class="offset1 span15">
+        <ul>
+          <li>Introduced Kanban process to improve team workflow and
+            visibility.</li>
+          <li>Evaluated several "Big Data" storage engines; chose and
+            deployed DataStax enterprise to serve as the back-end data
+            store for Krux' user data service.</li>
+          <li>Mentored teammates in best practices for Python
+            development and deployment.</li>
+          <li>Mentored teammates in the use of git for version
+            control.</li>
+          <li>Tracked down persistent performance difficulties with
+            Tornado-based services; implemented solutions enabling
+            continued scaling of those services.</li>
+          <li>Refactored puppet manifests to reflect best
+          practices. Wrote Puppet modules for:
+            <ul>
+              <li>Managing cowbuilder environments for building
+                packages.</li>
+              <li>Installing, configuring, and monitoring DataStax
+                Enterprise.</li>
+              <li>Installing and managing Java versions.</li>
+              <li>Upgrading the linux kernel.</li>
+              <li>Managing persistent SSH tunnels.</li>
+              <li>Gathering system metrics via sysstat.</li>
+            </ul>
+          <li>Wrote python scripts to monitor a variety of
+            services.</li>
+          <li>Led standardization efforts for deployment
+            scripts/processes.</li>
+        </ul>
+      </div>
+    </div>
+    <br/>
+
+    <div class="row">
+      <div class="offset7 span10 text-right">
+        <div class="job-border"></div>
+        <span class="job-title">Sr. Linux Systems Administrator</span><br/>
+        <span class="job-company">Yammer, Inc.</span><br/>
+        <span class="job-period">2011/10 to 2012/03</span>
+      </div>
+      <div class="offset1 span15">
+        <ul>
+          <li>Introduced Kanban process to improve team workflow and
+            visibility.</li>
+          <li>Build automatic provisioning system with kickstart and
+            Puppet.</li>
+        </ul>
+      </div>
+    </div>
+    <br/>
+    <br/>
+
+    <div class="row">
+      <div class="offset7 span10 text-right">
+        <div class="job-border"></div>
+        <span class="job-title">Engineer</span><br/>
+        <span class="job-company">SimpleGeo, Inc.</span><br/>
+        <span class="job-period">2010/06 to 2011/10</span>
+      </div>
+      <div class="offset1 span15">
+        <ul>
+          <li>Assisted in the design of an "Operations API" which we
+            will use to control our systems programatically for ad-hoc
+            tasks like restarting services, running consumption tests,
+            kicking off Puppet runs, etc.</li>
+          <li>Built and
+            open-sourced <a href="http://plathrop.github.com/piro">piro</a>,
+            a system for remotely controlling services in a plugabble
+            and programmatic fashion.</li>
+          <li>Created a system which fully records incoming requests
+            and spools a rolling window of requests to disk in order
+            to allow us to replay requests in the event of a failure
+            where we would otherwise lose data.</li>
+          <li>Contributed to development of user-facing API
+            services.</li>
+          <li>Responded to a malicious attack on infrastructure by a
+            privileged user; prevented attack from destroying critical
+            systems. Led recovery from attack and implementation of
+            new security measures. Led investigation of attack which
+            ended in prosecution of responsible party.</li>
+          <li>Built Puppet manifests and bootstrap scripts to allow us
+            to bootstrap instances to various roles without having to
+            maintain AMIs.</li>
+          <li>Built Operations team and acted as team lead:
+            represented operational interests to the development team
+            leads, established processes (scrum, kanban), set
+            priorites in response to business needs, delegated tasks
+            to team members.</li>
+          <li>Migrated configuration management from Chef to
+            Puppet.</li>
+        </ul>
+      </div>
+    </div>
+    <br/>
+
+    <div class="row">
+      <div class="offset7 span10 text-right">
+        <div class="job-border"></div>
+        <span class="job-title">Senior Systems Engineer</span><br/>
+        <span class="job-company">Digg, Inc.</span><br/>
+        <span class="job-period">2008/03 to 2010/06</span>
+      </div>
+      <div class="offset1 span15">
+        <ul>
+          <li>Actively worked to close gap between engineering and
+            operations, foster transparency, <br>and empower
+            engineering to iterate rapidly while maintaining site
+            stability.</li>
+          <li>Participated in development of internal cluster
+            mangagement software.</li>
+          <li>Wrote command-line application to automatically allocate
+            and provision servers, <br>including options to specify
+            minimum hardware requirements.</li>
+          <li>Redesigned Digg infrastucture to take advantage of heavy
+            automation & configuration management.</li>
+          <li>Developed Puppet modules to automate deployment,
+            configuration, and lifecycle management of key
+            clusters.</li>
+          <li>Developed FAI scripts which bootstrap systems from 'bare
+            metal' to functioning Puppet clients.</li>
+          <li>Assisted in migration from Subversion to Git as primary
+            source code management system.</li>
+          <li>Responsible for ensuring reliable operation of
+            production, staging, and development systems.</li>
+          <li>Perform code pushes and maintain change
+            documentation.</li>
+        </ul>
+      </div>
+    </div>
+    <br/>
+
+    <div class="row">
+      <div class="offset7 span10 text-right">
+        <div class="job-border"></div>
+        <span class="job-title">Contract Infrastructure Architect</span><br/>
+        <span class="job-company">Zicasso, LLC.</span><br/>
+        <span class="job-period">2007/10 to 2009/12</span>
+      </div>
+      <div class="offset1 span15">
+        <ul>
+          <li>Built an infrastucture which ran smoothly for over two
+            years with minimal intervention.</li>
+          <li>Automated system configuration using Puppet.</li>
+          <li>Firewall design, implementation, and maintenance.</li>
+          <li>Create, deploy, and manage Xen virtualized servers.</li>
+          <li>Patch managment and server maintenance.</li>
+          <li>Proposed and implemented automated backup system.</li>
+          <li>Deploy & maintain split-horizon DNS services.</li>
+          <li>Replace Zenoss monitoring system with Nagios.</li>
+          <li>Implement SNMP infrastructure.</li>
+          <li>Deploy Zenoss monitoring system, notifications, and
+            escalations.</li>
+          <li>Created extensive documentation, including
+            straightforward how-to procedures for common
+            administrative tasks.</li>
+          <li>Configure & maintain MySQL database systems.</li>
+        </ul>
+      </div>
+    </div>
+    <br/>
+
+    <div class="row">
+      <div class="offset7 span10 text-right">
+        <div class="job-border"></div>
+        <span class="job-title">Senior Systems Administrator</span><br/>
+        <span class="job-company">Kapor Enterprises, Inc.</span><br/>
+        <span class="job-period">2007/02 to 2008/03</span>
+      </div>
+      <div class="offset1 span15">
+        <ul>
+          <li>Created Twiki-based project management application.</li>
+          <li>Identified key areas of network and process improvement,
+            proposed solutions.</li>
+          <li>Proposed, planned, and implemented single sign-on
+            solution and corporate directory service.</li>
+          <li>Provided desktop support for a heterogenous network of
+            Mac OS X, Windows, and Linux desktops.</li>
+          <li>Responsible for researching and procurement of
+            best-of-breed equipment to implement the needs of
+            supported organizations.</li>
+        </ul>
+      </div>
+    </div>
+    <br/>
+
+    <div class="row">
+      <div class="offset7 span10 text-right">
+        <div class="job-border"></div>
+        <span class="job-title">Systems Administrator</span><br/>
+        <span class="job-company">SquareTrade, Inc.</span><br/>
+        <span class="job-period">2005/09 to 2007/02</span>
+      </div>
+      <div class="offset1 span15">
+        <ul>
+          <li>24x7 pager support for critical production systems.</li>
+          <li>Planned and implemented migration from SiteScope to
+            Nagios network monitoring, implemented custom service
+            plugins, distributed & redundant architecture, performance
+            metrics, and custom reporting interface.</li>
+          <li>Planned and implemented OpenLDAP directory service;
+            researched and proposed site-wide integration of
+            applications with directory service.</li>
+          <li>Administered heterogeneous network of several hundred
+            nodes spread across several sites; maintained WAN links,
+            VPN, remote administration between locations; maintained
+            two data center locations with over 125 servers.</li>
+          <li>Performed audit of poorly maintained RAID systems,
+            implemented automated maintenance and reporting of RAID
+            array performance and issues.</li>
+          <li>Proposed, planned, and test-deployed Linux desktop
+            solution for sales representatives to replace costly
+            Windows desktops.</li>
+          <li>Performed extensive documentation of server and network
+            infrastructure.</li>
+          <li>Researched, planned, and assisted deployment of Novell
+            eDirectory and ZenWorks infrastructure.</li>
+          <li>Assisted in migration from Checkpoint firewalls to
+            OpenBSD firewalls.</li>
+          <li>Assisted in software license compliance audit.</li>
+          <li>Oversaw replacement of aging desktop-class hardware with
+            server-class hardware.</li>
+          <li>Researched and proposed migration plan from NT-style
+            domain to Active Directory infrastructure.</li>
+          <li>Researched and proposed deployment of enterprise XMPP
+            chat service for internal messaging.</li>
+          <li>Researched and proposed replacement of overloaded
+            internal mail architecture with distributed, scalable
+            mailing architecture.</li>
+        </ul>
+      </div>
+    </div>
+    <br/>
+
+    <div class="row">
+      <div class="offset7 span10 text-right">
+        <div class="job-border"></div>
+        <span class="job-title">Systems Administrator</span><br/>
+        <span class="job-company">OnYourMark, LLC.</span><br/>
+        <span class="job-period">2004/04 to 2005/09</span>
+      </div>
+      <div class="offset1 span15">
+        <ul>
+          <li>Planned and implemented migration from archaic
+            Sendmail-based email system to a database-backed Postfix
+            mail server, delegating specific tasks to system
+            administration staff. Supervised programming of customized
+            email administration software for new system.</li>
+          <li>Replaced several outdated firewalls with OpenBSD
+            firewalls. Wrote sophisticated firewall rule sets to
+            filter and monitor network traffic. Created automatic log
+            processing scripts to analyze firewall logs and produce
+            daily reports.</li>
+          <li>Created standardized server configuration procedures and
+            documentation. Oversaw redeployment of servers to comply
+            with standardized configuration.</li>
+          <li>Created and administered network access/security
+            policies and procedures.</li>
+          <li>Maintained and administered heterogeneous intra-office
+            network, including Windows 2000/XP and Mac OS X
+            workstations, Unix file and web servers, wireless access
+            points, and network printers.</li>
+          <li>Planned migration of intra-office network to Windows
+            2003 Active Directory infrastructure.</li>
+          <li>Remotely administered and maintained DNS, web, and
+            database servers in several co-location facilities.</li>
+          <li>Provided Tier II technical support.</li>
+          <li>Oversaw system backup and network maintenance as well as
+            server monitoring (Nagios) and IDS.</li>
+          <li>Performed software license audit and inventory.</li>
+          <li>Maintained relationships with hardware, software, and
+            bandwidth vendors.</li>
+          <li>Installed and administered DHCP server for automatic
+            network configuration.</li>
+          <li>Automated a variety of administrative tasks through
+            shell scripts and custom programming.</li>
+        </ul>
+      </div>
+    </div>
+    <br/>
+
+    <div class="row">
+      <div class="offset7 span10 text-right">
+        <div class="job-border"></div>
+        <span class="job-title">Jr. Systems Administrator</span><br/>
+        <span class="job-company">Various Companies</span><br/>
+        <span class="job-period">1999-2004</span>
+      </div>
+      <div class="offset1 span15">
+        <ul>
+          <li>Administered web, DNS, and database servers running
+            FreeBSD, NT 4, and Windows 2000 Server.</li>
+          <li>Administered MySQL and MS-SQL 2000 databases.</li>
+          <li>Improved uptimes by as much as 29%.</li>
+          <li>Created, implemented, and enforced security policies on
+            network, server, and individual workstation levels.</li>
+          <li>Managed server migrations to/from varios operating
+            systems.</li>
+          <li>Planned and installed internal networks: CAT5 cabling,
+            network ports, high-bandwidth switches, wireless access
+            points, routers, firewall, and VPN.</li>
+          <li>Secured wireless network segment against unauthorized
+            access and packet monitoring.</li>
+          <li>Proposed, planned, and implemented conversion of aging
+            collection of 486 PCs into Citrix Metaframe thin-client
+            terminals.</li>
+        </ul>
+      </div>
+    </div>
+    <br/>
+
+
+    <!-- Grey Border along right edge -->
+    <div id="right-border"></div>
+
+    <!-- Red Border along left edge -->
+    <img id="red-long" src="images/red-long.png">
   </body>
 </html>
