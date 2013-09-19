@@ -58,6 +58,10 @@ ul {
     left: -14px;
 }
 
+li {
+    margin-bottom: 0.2em;
+}
+
 .job-border {
     border-right: 4px solid rgb(203, 58, 39);
     float: right;
