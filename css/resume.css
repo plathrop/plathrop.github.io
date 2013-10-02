@@ -6,6 +6,11 @@ body {
     margin-top: 16px;
 }
 
+#robot {
+    height: 100px;
+    width: 100px;
+}
+
 address {
     font-size: 15px;
     font-weight: medium;
