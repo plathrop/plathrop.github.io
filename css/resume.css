@@ -84,7 +84,7 @@ li {
 }
 
 @media print {
-    #red-long, .job-border {
+    #red-long, .job-border, #robot, #right-border, #address-block {
         display: none;
     }
 }
