@@ -16,9 +16,11 @@ body {
     left: 50px;
 }
 
-#robot { 
+#robot {
     position: absolute;
     top: 28px;
+    height: 100px;
+    width: 100px;
 }
 
 #red-long {
