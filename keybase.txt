@@ -1,0 +1,71 @@
+==================================================================
+https://keybase.io/plathrop
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of http://plathrop.tertiusfamily.net
+  * I am plathrop (https://keybase.io/plathrop) on keybase.
+  * I have a public key with fingerprint C2D1 1D4E DF1E B46D 88D9  394B 5FA7 9C1E 7DDC 5B89
+
+To do so, I am signing this object:
+
+{
+    "body": {
+        "client": {
+            "name": "keybase.io node.js client",
+            "version": "0.7.7"
+        },
+        "key": {
+            "fingerprint": "c2d11d4edf1eb46d88d9394b5fa79c1e7ddc5b89",
+            "host": "keybase.io",
+            "key_id": "5FA79C1E7DDC5B89",
+            "uid": "088034aaeddf6f4f014f02243f040719",
+            "username": "plathrop"
+        },
+        "merkle_root": {
+            "ctime": 1425490311,
+            "hash": "ba20bbcf289533e68e3ebac1790705ef6ab591b52f934484ad110df1c20a3c0a25890941e98fefce5eb1da67a5953dcf1eca9f387c9e3bb54ee97ff6d14782bf",
+            "seqno": 171519
+        },
+        "service": {
+            "hostname": "plathrop.tertiusfamily.net",
+            "protocol": "http:"
+        },
+        "type": "web_service_binding",
+        "version": 1
+    },
+    "ctime": 1425490391,
+    "expire_in": 157680000,
+    "prev": "a8830dce00999a7982758ad2985db528edb6827ee65b77b259b10eefeb04c1e8",
+    "seqno": 2,
+    "tag": "signature"
+}
+
+which yields the signature:
+
+-----BEGIN PGP MESSAGE-----
+Comment: GPGTools - https://gpgtools.org
+
+owFdUj2LFDEYHvdUUBS8PyDHVCLnkGSSSbLdff4CG7VY8vFmN97ezDgz97EcW592
+NlodYudfEAThtNPSwkZstJErxEpQBJNlRb2BwCR53ifP87zvw8sLSW9x8Ozo6vTD
+nQdn3n7Ryc3vK+8PUl3ZSdo/SM3YQ9nFv1JtQ9pPt2CiVQuZr5bKykJ2t12aY5bT
+XWhaX5UBhTKe8XS6HOGx2PlyCE3d+MiVGmIxthSsw6BpYYWwMpdUM6e4NBi4tYZp
+IQPlqGq7/15NZ5wDb8Mp21zhcg1v8PX1NbY6w+/MLpAQKKdKgbWucNQhHBYhNHeI
+Io5nwBaauaV6rLpRU9VR7zY0W2MYNFU1M206HyGYEkYlyjEOilQ7CkVaEaS1cURI
+ludQCMhBK4O5RBwxcIXSTGLNiJM5pYKqYBkFw4YglRukCBMSSYpBCgfOAAONrSq4
+YoHPmpCMUdLlghsJudaMAkjuXGEx5YJoFyy0cK+sgjiOGZbTuG92vYGoO8Z2yl3W
+QdP5ndapbT+eZCXEjtVN1VWmGgfcqOvqfvoi8HSTOhbugR7MKQfalza08N8e44A8
+FY8M8cB+7RsY+IhgvBAofPEd2A2USogcWQMISSlDrwXhTChLpGA2RCXA6iKcARRM
+c64JkxojAAca0TAX4q9pEmSqYaBs/bBU3U4D6fT+5tlksZecP9eLM5xcvHDlz2C/
+apOjSzdefn7y89fH49V3S28+7d16tFCcJE9fo8OvJ897165nj93tH73h/sbxt98=
+=jav3
+-----END PGP MESSAGE-----
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/plathrop
+
+==================================================================
+
