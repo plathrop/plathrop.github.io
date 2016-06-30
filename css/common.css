@@ -5,7 +5,7 @@ body {
 }
 
 #content-area {
-    width: 850px;
+    width: 1000px;
     height: 1000px;
     border-right: 3px solid rgb(204,204,204);
 }
@@ -32,7 +32,7 @@ body {
 .title-block {
     position: absolute;
     left: 125px;
-    width: 350px;
+    width: 410px;
 }
 
 .title-block h1, .title-block h2 {
@@ -54,7 +54,7 @@ body {
 
 .about-block {
     position: absolute;
-    left: 500px;
+    left: 610px;
     width: 250px;
     text-align: right;
     font-size: 11px;
@@ -70,7 +70,7 @@ body {
     position: absolute;
     left: 150px;
     top: 250px;
-    width: 625px;
+    width: 745px;
 }
 
 .info-block {
@@ -116,7 +116,7 @@ body {
     position: absolute;
     top: 244px;
     left: 175px;
-    width: 625px;
+    width: 740px;
     height: 0px;
     border-top: 16px solid rgb(130,130,130);
 }
