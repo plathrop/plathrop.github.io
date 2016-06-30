@@ -1,5 +1,6 @@
 body {
     margin-top: 100px;
+    font-size: 16px;
 }
 
 #header-image {
@@ -36,7 +37,7 @@ h1 {
 #right-border {
     border-right: 3px solid rgb(210,210,210);
     position: absolute;
-    left: 850px;
+    left: 1000px;
     top: 0px;
     width: 3px;
     height: 2000px;
