@@ -1,4 +1,6 @@
 body {
+    background-color: #002b36;
+    color: #839496;
     margin-top: 100px;
     font-size: 16px;
 }
@@ -15,7 +17,7 @@ body {
 address {
     font-size: 15px;
     font-weight: medium;
-    color: rgb(130, 130, 130);
+    color: #586e75;
 }
 
 #name-and-title {
@@ -24,18 +26,18 @@ address {
 }
 
 h1 {
-    color: rgb(203, 58, 39);
+    color: #dc322f;
     font-size: 60px;
 }
 
 #subtitle {
-    color: rgb(130, 130, 130);
+    color: #93a1a1;
     font-family: 'Francois One';
     font-size: 30px;
 }
 
 #right-border {
-    border-right: 3px solid rgb(210,210,210);
+    border-right: 3px solid #eee8d5;
     position: absolute;
     left: 1000px;
     top: 0px;
@@ -50,13 +52,13 @@ h1 {
 }
 
 .divider-bar {
-    border-top: 16px solid rgb(130,130,130);
+    border-top: 16px solid #eee8d5;
 }
 
 .h2b {
     font-family: 'Francois One';
     font-size: 30px;
-    color: rgb(203, 58, 39)
+    color: #dc322f;
 }
 
 ul {
@@ -69,7 +71,7 @@ li {
 }
 
 .job-border {
-    border-right: 4px solid rgb(203, 58, 39);
+    border-right: 4px solid #dc322f;
     float: right;
     width: 4px;
     height: 48px;
@@ -81,7 +83,7 @@ li {
 
 .job-period {
     font-style: italic;
-    color: rgb(130, 130, 130);
+    color: #586e75;
 }
 
 @media print {
