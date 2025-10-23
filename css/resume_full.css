@@ -1,0 +1,93 @@
+body {
+    background-color: #002b36;
+    color: #839496;
+    margin-top: 100px;
+    font-size: 16px;
+}
+
+#header-image {
+    margin-top: 16px;
+}
+
+#robot {
+    height: 100px;
+    width: 100px;
+}
+
+address {
+    font-size: 15px;
+    font-weight: medium;
+    color: #586e75;
+}
+
+#name-and-title {
+    margin-top: 32px;
+    font-family: 'Francois One';
+}
+
+h1 {
+    color: #dc322f;
+    font-size: 60px;
+}
+
+#subtitle {
+    color: #93a1a1;
+    font-family: 'Francois One';
+    font-size: 30px;
+}
+
+#right-border {
+    border-right: 3px solid #eee8d5;
+    position: absolute;
+    left: 1000px;
+    top: 0px;
+    width: 3px;
+    height: 2000px;
+}
+
+#red-long {
+    position: absolute;
+    top: 228px;
+    left: 100px;
+}
+
+.divider-bar {
+    border-top: 16px solid #eee8d5;
+}
+
+.h2b {
+    font-family: 'Francois One';
+    font-size: 30px;
+    color: #dc322f;
+}
+
+ul {
+    position: relative;
+    left: -14px;
+}
+
+li {
+    margin-bottom: 0.2em;
+}
+
+.job-border {
+    border-right: 4px solid #dc322f;
+    float: right;
+    width: 4px;
+    height: 48px;
+}
+
+.job-title {
+    font-weight: bold;
+}
+
+.job-period {
+    font-style: italic;
+    color: #586e75;
+}
+
+@media print {
+    #red-long, .job-border, #robot, #right-border, #address-block {
+        display: none;
+    }
+}
